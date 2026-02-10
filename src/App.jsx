@@ -22,7 +22,7 @@ function App() {
                     <div className="monke-container">
                         <img className="img-fluid monke" src={"sad_monke.gif"} alt="" />
                     </div>
-                    <h1 className="display-3 text-center my-2">oh...</h1>
+                    <h1 className="display-4 text-center my-2">oh...</h1>
                     <button className="btn btn-outline-danger btn mt-5" onClick={reset}>
                         try again
                     </button>
@@ -33,11 +33,11 @@ function App() {
 
     return (
         <div className="App d-flex flex-column align-items-center justify-content-center">
-            <div className="main container-fluid d-flex justify-content-center align-items-center flex-column">
+            <div className="main container-fluid d-flex justify-content-center align-items-center flex-column pb-5">
                 <div className="monke-container">
                     <img className="img-fluid monke" src={pictures[yesStep]} alt="" />
                 </div>
-                <h1 className="display-3 text-center my-2">{text[yesStep]}</h1>
+                <h1 className="display-4 text-center my-2">{text[yesStep]}</h1>
                 <div className="btns">
                     {yesStep === pictures.length - 1 ? (
                         <>
